@@ -57,6 +57,7 @@ def levenshteinl():
     """
     编辑距离：计算一个字符串变换多少次到另一个字符串
     """
+    pass
 
 
 # 去除停用词，同时替换同义词
@@ -79,8 +80,8 @@ def word_vector(data_all):
     for i in [1, 2, 3, 4, 5, 6]:
         model = Word2Vec(data_all, window=i, sg=0, size=100, min_count=1, negative=3, sample=0.001, hs=1, workers=4,
                          cbow_mean=1)
-        model.save(os.path.join('Match/atecnlpsim/input_data/model.model'))
-        model.wv.save_word2vec_format(os.path.join("Match/atecnlpsim/input_data/model.ve" + str(i)), binary=False)
+        model.save(os.path.join(model_config.data_path,'model.model'))
+        model.wv.save_word2vec_format(os.path.join(model_config.data_path,"model.ve" + str(i)), binary=False)
 
 
 def load_data():

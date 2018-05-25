@@ -21,3 +21,4 @@ def process(inpath, outpath):
 
 if __name__ == '__main__':
     process(sys.argv[1], sys.argv[2])
+
