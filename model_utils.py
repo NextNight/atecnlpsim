@@ -1,5 +1,13 @@
 #/usr/bin/env python
-
+#coding: utf-8
+"""
+  @Time    : 13:47
+  @Author  : chengxin
+  @Site    :
+  @File    : MLpythonLearn
+  @Software: PyCharm
+  @Contact : 1031329190@qq.com
+"""
 # pip install python-Levenshtein
 from sklearn.metrics import jaccard_similarity_score
 import os
